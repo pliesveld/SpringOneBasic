@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="studentmain" class="com.MapInjection.StudentMain">
+		<property name="studIdAndNameMap">
+			<map>
+				<entry key="101" value="Stark"></entry>
+				<entry key="102" value="Affleck"></entry>
+			</map>
+		</property>
+		
+		<property name="studentInfo">
+			<map>
+				<entry key="111" value-ref="student1"></entry>
+				<entry key="122" value-ref="student2"></entry>
+			</map>
+		</property>
+	</bean>
+	
+	<bean id="student1" class="com.MapInjection.Student">
+		<property name="name" value="Tchala"></property>
+		<property name="gender" value="Male"></property>
+	</bean>
+	
+	<bean id="student2" class="com.MapInjection.Student">
+		<property name="name" value="Wanda"></property>
+		<property name="gender" value="Female"></property>
+	</bean>
+	
+	
+
+
+</beans>

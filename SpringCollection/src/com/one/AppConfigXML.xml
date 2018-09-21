@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id="restaurant" class="com.one.Restaurant">
+   	   <property name="waiters">
+   	   	<list>
+   			<value>Tony Stark</value>
+   			<value>Bruce Banner</value>
+   			<value>Bruce Wayne</value>
+   			<value>Peter Parker</value>
+   			<value>Harry Loyd</value>
+   			<value>Dr Strange</value>
+   		</list>
+   	   </property>
+   		
+   </bean>
+   
+</beans>

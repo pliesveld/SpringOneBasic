@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="student" class="com.arraySetList.Student">
+		<property name="name">
+			<array>
+				<value>Tony</value>
+				<value>Bruce</value>
+				<value>Alice</value>
+			</array>
+		</property>
+		<property name="studnamelist">
+			<list>
+				<value>Peter</value>
+				<value>Harry</value>
+				<value>Brock</value>
+			</list>
+		</property>
+		<property name="studidset">
+			<set>
+				<value>101</value>
+				<value>102</value>
+				<value>103</value>
+			</set>
+		</property>
+	</bean>
+
+
+</beans>

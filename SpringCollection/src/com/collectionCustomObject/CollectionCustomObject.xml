@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="studentmain" class="com.collectionCustomObject.StudentMain">
+		<property name="studarray">
+			<array>
+				<ref bean = "student"/>
+				<ref bean = "student1"/>
+				<ref bean = "student2"/>
+			</array>
+		</property>
+		<property name="studlist">
+			<list>
+				<ref bean = "student"/>
+				<ref bean = "student1"/>
+				<ref bean = "student2"/>
+			</list>
+		</property>
+		<property name="studset">
+			<set>
+				<ref bean = "student"/>
+				<ref bean = "student1"/>
+				<ref bean = "student2"/>
+			</set>
+		</property>
+	</bean>
+	
+	<bean id="student" class="com.collectionCustomObject.Student">
+		<property name="name" value="Tchala"></property>
+		<property name="gender" value="Male"></property>
+	</bean>
+	
+	<bean id="student1" class="com.collectionCustomObject.Student">
+		<property name="name" value="Wanda"></property>
+		<property name="gender" value="Female"></property>
+	</bean>
+	
+	<bean id="student2" class="com.collectionCustomObject.Student">
+		<property name="name" value="Scarlet"></property>
+		<property name="gender" value="Female"></property>
+	</bean>
+
+
+</beans>
