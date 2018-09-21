@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd" default-init-method="init" default-destroy-method="destroy">
+   
+ 	<bean id="message" class="com.beanPostProcessor.Message" init-method="init" destroy-method="destroy">
+ 		<property name="id" value="117"></property>
+ 		<property name="message" value="Alhamdulillah!"></property>
+ 	</bean> 
+ 	
+ 	<bean class="com.beanPostProcessor.MyBeanPostProcessor1"></bean>
+ 	<bean class="com.beanPostProcessor.MyBeanPostProcessor2"></bean>
+ 	
+ </beans>
