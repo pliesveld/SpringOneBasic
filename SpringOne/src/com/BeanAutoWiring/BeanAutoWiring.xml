@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+ 	<bean id="triangle" class="com.BeanAutoWiring.Triangle" autowire="byName">
+ 		
+ 	</bean> 
+ 	
+ 	<bean id="pointA" class="com.BeanAutoWiring.Point" >
+ 		<property name="x" value="0"></property>
+ 		<property name="y" value="10"></property>
+ 	</bean>
+ 	
+ 	<bean id="pointB" class="com.BeanAutoWiring.Point">
+ 		<property name="x" value="20" ></property>
+ 		<property name="y" value="30"></property>
+ 	</bean>
+ 	
+ 	<bean id="pointC" class="com.BeanAutoWiring.Point">
+ 		<property name="x" value="40" ></property>
+ 		<property name="y" value="50"></property>
+ 	</bean>
+ </beans>
